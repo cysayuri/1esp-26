@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: "Jockey One", Roboto, Calibri, sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+#personagens, #viloes, #final {
+    border-bottom: 30px solid #5ED338;
+}
+
+#banner { background-color: #F43443; }
+#inicio { background-color: #E8E8E0; }
+#personagens { background-color: #819DF9; }
+#poderes { background-color: #E7D5AB; padding: 50px 0; }
+#viloes { background-color: #555250; border-color: #FB3603; }
+#final { background-color: #819DF9; }
+
+#banner {
+    display: flex;
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center; /* Alinhamento vertical */
+}
+
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* direção da disposição, em coluna ou linha */
+}
+
+.botao {
+    background-color: #62C82E;
+    color: #fff;
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-size: 30px;
+    text-decoration: none;
+    width: 270px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.personagens-item {
+    width: 170px;
+    text-align: center;
+}    
+
+.personagens-item img {
+    border-radius: 100%;
+}    
+
+.personagens-lista {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h4 {
+    background-color: #4D6DD2;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    padding: 5px 0;
+    margin-top: 10px;
+}
+
+.poderes-item {
+    border: 10px solid #E7B300;
+    width: 120px;
+    height: 120px;
+    margin: 0 20px 30px;
+    border-radius: 10px;
+}
+
+.poderes-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.poderes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#viloes {
+    padding: 70px 40px;
+}
+
+.viloes-lista {
+    display: flex;
+    justify-content: space-between;
+}
+
+.viloes-lista .personagens-item {
+    margin: 0 10px;
+}
+
+#final {
+    padding-bottom: 0;
+}
+    
+#final h2 {
+    margin-bottom: 10px;
+}
+
+.final-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.princesas {
+    width: 170px;
+    height: 180px;
+    /* object-fit: cover; */
+    object-fit: contain;
+}
+
+
+/* Aula Menu */
+
+nav {
+    background: #62C82E;
+    width: 100%;
+    box-shadow: 1px 1px 10px #00000070;
+    position: fixed;
+    top: 0;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            padding: 5px 0;
+            list-style: none;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 22px;
+                display: block;
+                padding: 10px 25px;
+            }
+        }
+    }
+}
+
+.botao {
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        background-color: #3b8318;
+        transform: scale(1.2);
+    }
+}
+
+#personagens .personagens-item {
+    cursor: pointer;
+
+    &:hover img {
+        transform: translateY(-15px);
+    }
+    
+    img {
+        transition: all .5s ease-in-out;
+    }
+}
