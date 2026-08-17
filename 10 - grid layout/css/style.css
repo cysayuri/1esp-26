@@ -1,0 +1,39 @@
+/* CSS base */
+* {
+    box-sizing: border-box;
+}
+
+body {    
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}    
+
+h1 {
+    color: #dc143c;
+    margin: 30px 0 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+h2 {
+    background-color: #8196f565;
+    color: #000;
+    padding: 10px 0;
+    margin: 30px 0 50px;
+    text-align: center;
+}
+
+.container {
+    height: 80vh;
+    margin: 40px auto 100px;
+    color: #fff;
+    text-align: center;
+}
+
+.box { min-height: 100px; }
+
+.box1 { background-color: #bebbbb; }
+.box2 { background-color: #444054; }
+.box3 { background-color: #2f243a; }
+.box4 { background-color: #2a2464; }
