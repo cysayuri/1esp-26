@@ -1,0 +1,16 @@
+.box {
+    color: #fff;
+    border: 2px solid #2a2464;
+    padding: 10px;
+}
+
+.box1, .box4 { background-color: #bebbbb; }
+.box2, .box5 { background-color: #444054; }
+.box3, .box6 { background-color: #2f243a; }
+
+.container {     
+      margin: 10px auto;
+      min-height: 300px;
+      width: 80%;
+      border: 1px solid #000;
+}
