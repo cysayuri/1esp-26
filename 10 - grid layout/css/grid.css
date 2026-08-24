@@ -1,0 +1,37 @@
+/* Testando propriedades do grid */
+.grid-container { display: grid; }
+
+.ex-1 {
+    /* Definindo a largura das colunas */
+    grid-template-columns: 270px 100px 220px 130px;
+}
+
+.ex-2 {
+    /* Medida fr -> fração */
+    grid-template-columns: 1fr 2fr 1fr 3fr;
+}
+
+.ex-3 {
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(3, 1fr) 100px;
+}
+
+.ex-4 {
+    grid-template-columns: minmax(100px, 1fr) 2fr 2fr 100px;
+}
+
+.ex-5 {
+    /* Quantidade indefinida de colunas, encaixando o máximo que couber, dentro dos limites especificados */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin: 30px 0;
+}
+
+.ex-6 {
+    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, 250px);
+}
+
+.ex-7 {
+    /* Definindo a altura das linhas */
+    grid-template-rows: 1fr 2fr 3fr 1fr;
+}
