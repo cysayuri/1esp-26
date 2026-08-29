@@ -7,3 +7,117 @@
 body {
     font-family: "Catamaran", sans-serif;
 }
+
+.bg1 {
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0, .1)),
+    url(../images/bg1.jpg);
+}
+
+.bg2 {
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0, .1)),
+    url(../images/bg2.jpg);
+}
+
+.bg3 {
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0, .1)),
+    url(../images/bg3.jpg);
+}
+
+.bg4 {
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0, .1)),
+    url(../images/bg4.jpg);
+}
+
+.gallery {
+    color: #fff;
+    padding: 10px 0;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 320px;
+}
+
+/* O valor 'span' no grid define o ponto de INÍCIO da linha e, então, a quantidade de colunas a partir desse ponto */
+.span-2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: opacity .8s ease-in, transform .5s;
+
+    &:hover {
+        opacity: 0.85;
+        transform: scale(0.95);
+
+        span {
+            animation: bounce .7s ease-in-out infinite alternate .3s;
+        }    
+    }    
+}
+
+/* ----- Animação ----- */
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }    
+    100% {
+        transform: translateY(10px);
+    }    
+}    
+
+h2 {
+    font-size: 35px;
+    
+    span {
+        font-size: 50px;
+        display: block;
+        margin: 15px;
+
+        i {
+            font-size: 40px;
+        }    
+    }    
+}
+
+
+/* ----- Responsividade ----- */
+
+@media (max-width: 850px) {
+    .box {
+        grid-column: span 2;
+    }
+
+    .span-2 {
+        grid-column: span 4;
+    }
+}
+
+@media (max-width: 500px) {
+    .box {
+        grid-column: span 4;
+        height: 250px;
+
+        h2 {
+            font-size: 30px;
+
+            span, i {
+                font-size: 35px;
+            }
+        }
+    }
+
+    .gallery {
+        grid-auto-rows: auto;
+    }
+}
