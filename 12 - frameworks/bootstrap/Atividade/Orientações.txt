@@ -1,0 +1,8 @@
+Utilizando os componentes, cores, formatos, etc do bootstrap, reproduzam o layout proposto:
+
+- Navbar com o nome da empresa e 3 links das seções, com fundo escuro e texto claro;
+- Botão de "Comprar agora" abre um modal, indicado na imagem "modal" anexa;
+- Hero section com Título, Texto e uma imagem (todos podem ser genéricos, textos em Lorem e imagem aleatória);
+- Seção de depoimentos: Título e subtítulo fixos e carrossel com os relatos dos clientes;
+- Seção de FAQ: accordion com perguntas frequentes, ao clicar no item, abre o dropdown com a resposta;
+- Footer simples com copyright, com fundo escuro e texto claro.
