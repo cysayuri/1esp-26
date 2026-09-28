@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Bootstrap</title>
+  
+  <!-- Bootstrap: basta importar UM arquivo CSS e já temos classes,
+  componentes e um grid system prontos, com visual definido. -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  >
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container my-5 text-center">
+    
+    <!-- display-5 -> estilização dos títulos + tamanho (5) -->
+    <h1 class="display-5 fw-bold">Bootstrap na prática</h1>
+    <!-- lead -> estilização dos textos -->
+    <p class="lead">
+      Componentes prontos + classes utilitárias.
+    </p>
+    
+    <!-- ----------------------------
+    O Bootstrap divide a largura em 12 colunas.
+    .col-md-4 = ocupa 4/12 (um terço) a partir do tamanho "md" (tablet/desktop).
+    Se não definir em outras medidas, apenas md, quando estiver em telas pequenas, irá ocupar a linha inteira (empilhando automaticamente).
+    ---------------------------- -->
+    <section class="mb-5">
+      <!-- row -> como a propriedade flex, deixa os itens lado a lado, em linha -->
+      <!-- g-3 -> gap (espaçamento entre os itens) -->
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="p-3 bg-primary text-white rounded text-center">col-md-4</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bg-primary text-white rounded text-center">col-md-4</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bg-primary text-white rounded text-center">col-md-4</div>
+        </div>
+      </div>
+      
+      <div class="row g-3 mt-2">
+        <div class="col-md-8">
+          <div class="p-3 bg-secondary text-white rounded text-center">col-md-8</div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bg-secondary text-white rounded text-center">col-md-4</div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section id="componentes" class="mb-5">
+      <div class="mt-4">
+        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exemploModal">
+          Abrir modal
+        </button>
+      </div>
+      
+      <div class="modal fade" id="exemploModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal pronto</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              Esse comportamento (abrir/fechar) já vem pronto no JavaScript do Bootstrap,
+              sem precisar escrever nenhuma linha de JS própria.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <div class="alert alert-secondary">
+      <strong>Particularidade do Bootstrap:</strong> tudo que vimos do Bootstrap (navbar, cards,
+      botões, modal, formulário, etc.) já tem visual pronto só com as classes. O trabalho de
+      customização é sobrescrever ou ajustar as variáveis para fugir da "cara padrão".
+    </div>
+  </div>
+  
+  <footer class="bg-dark text-white text-center py-3">
+    Demo Bootstrap 5.3
+  </footer>
+  
+  <!-- JS do Bootstrap (necessário importar para componentes com funcionalidades, ex: modal, navbar etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

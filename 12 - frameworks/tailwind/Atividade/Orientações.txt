@@ -1,0 +1,21 @@
+Tema: um ateliê fictício de encadernação artesanal — "Fio & Prensa"
+Obs: tema sugerido, não obrigatório, podem adaptar a IDV e usar a criatividade!
+
+Paleta:
+- verde profundo (#1B4332)
+- off-white (#EFE7D6)
+- preto (#2A241C)
+- vermelho-linha (#9A3324)
+- dourado-terra (#A9895F)
+
+Tipografia:
+- Fraunces (serifada) nos títulos
+- Work Sans no corpo
+
+Estrutura:
+- Menu;
+- Hero;
+- Seção Sobre, em 4 etapas;
+- Seção Galeria, com grid layout;
+- Seção Depoimento;
+- Footer.
